@@ -1,6 +1,8 @@
 ﻿using CakeSharp;
 using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,56 +15,29 @@ namespace CakeSharp
         A tree is "superbalanced" if the difference between the depths of any two leaf nodes ↴ is no greater than one. 
     */
 
-    public class BinaryTree
+    public class Node
     {
-        public BinaryTree left;
-        public BinaryTree right;
-        private int value;
-        private int depth;
-
-        #region Constructor
-        public BinaryTree(){}
-
-        public BinaryTree(int value)
-        {
-            this.value = value;
-        }
+        private Node node;
 
 
-        #endregion
     }
+
 
     class Program
     {
 
-        public static BinaryTree CreateTree()
-        {
-            BinaryTree tree = new BinaryTree(5);
-            // left
-            tree.left = new BinaryTree(3);
-            tree.left.left = new BinaryTree(2);
-            tree.left.right = new BinaryTree(3);
-            tree.left.right.right = new BinaryTree(4);
-            //right
-            tree.right = new BinaryTree(10);
-            tree.right.left = new BinaryTree(7);
-            tree.right.left.left = new BinaryTree(6);
-            tree.right.right = new BinaryTree(11);
-            tree.right.right.right = new BinaryTree(12);
-
-
-            return tree;
-        }
-
-
-
         static void Main(string[] args)
         {
-            BinaryTree tree = CreateTree();
+            BinaryTree tree = BinaryTree.CreateTree();
             if (isTreeBalanced(tree))
             {
-                
+                Console.WriteLine("Yes");
             }
+            else
+            {
+                Console.WriteLine("No");
+            }
+            Console.ReadLine();
         }
 
 
@@ -73,21 +48,44 @@ namespace CakeSharp
              * track depth and compare with depths what we saw so far             
              */
 
+            if (tree == null)
+            {
+                return true;
+            }
+
             Stack<BinaryTree> stack = new Stack<BinaryTree>();
 
+
             stack.Push(tree);
-            HashSet<int> depth = new HashSet<int>();
-            
+
+            Collection<int> depths = new Collection<int>();
+
+            depths[0] = -1;
+            depths[1] = -1;
+            depths[2] = -1;
 
             while (stack.Count > 0)
             {
                 BinaryTree node = stack.Pop();
 
+
+                if (tree.left == null && tree.right == null)
+                {
+                }
+                else
+                {
+                    if (tree.left != null)
+                    {
+                        stack.Push(tree.left);
+                    }
+                    if (tree.right != null)
+                    {
+                        stack.Push(tree.right);
+                    }
+                    
             }
 
             return false;
         }
-
-        
     }
 }
