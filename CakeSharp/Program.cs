@@ -17,9 +17,14 @@ namespace CakeSharp
 
     public class Node
     {
-        private Node node;
+        public BinaryTree TreeNode;
+        public int Depth;
 
-
+        public Node(BinaryTree treeNode, int depth)
+        {
+            TreeNode = treeNode;
+            Depth = depth;
+        }
     }
 
 
@@ -53,39 +58,51 @@ namespace CakeSharp
                 return true;
             }
 
-            Stack<BinaryTree> stack = new Stack<BinaryTree>();
+            Stack<Node> stack = new Stack<Node>();
 
 
-            stack.Push(tree);
+            stack.Push(new Node(tree, 0));
 
-            Collection<int> depths = new Collection<int>();
-
-            depths[0] = -1;
-            depths[1] = -1;
-            depths[2] = -1;
+            //Collection<int> depths = new Collection<int>();
+            var depth = new List<int>(3);
+            
 
             while (stack.Count > 0)
             {
-                BinaryTree node = stack.Pop();
+                Node node = stack.Pop();
+                int d = node.Depth;
+                BinaryTree treeNode = node.TreeNode;
 
-
-                if (tree.left == null && tree.right == null)
+                if (treeNode.left == null && treeNode.right == null)
                 {
+
+                    // leaf case
+                    //Console.WriteLine("Leaf d: " + d);
+                    if (!depth.Contains(d))
+                    { //
+                        depth.Add(d);
+                        if (depth.Count > 2 || depth.Count == 2 && Math.Abs(depth[0] - depth[1]) > 1)
+                        {
+                            return false;
+                        }
+                    }
+
                 }
-                else
+                else // not leaf case, go deeper
                 {
-                    if (tree.left != null)
+                    if (treeNode.left != null)
                     {
-                        stack.Push(tree.left);
+                        stack.Push(new Node(treeNode.left, d+1));
                     }
-                    if (tree.right != null)
+                    if (treeNode.right != null)
                     {
-                        stack.Push(tree.right);
+                        stack.Push(new Node(treeNode.right, d+1));
                     }
-                    
+                }
+
             }
 
-            return false;
+            return true;
         }
     }
 }
