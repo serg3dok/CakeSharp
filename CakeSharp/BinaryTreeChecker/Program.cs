@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace BinaryTreeChecker
 {
+
+    /*
+     * Write a function to check that a binary tree ↴ is a valid binary search tree
+     */
+
     class Program
     {
         static void Main(string[] args)
