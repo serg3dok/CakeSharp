@@ -12,7 +12,7 @@ namespace BinaryTreeChecker
         {
             BinaryTree tree = BinaryTree.createValidBinaryTree();
 
-            if (isBinaryTreeValid(tree, true))
+            if (isBinaryTreeValid(tree))
             {
                 Console.WriteLine("Valid");
             }
@@ -24,7 +24,7 @@ namespace BinaryTreeChecker
 
         }
 
-        private static bool isBinaryTreeValid(BinaryTree tree, bool r)
+        private static bool isBinaryTreeValid(BinaryTree tree)
         {
             var stack = new Stack<BinaryTree>();
             stack.Push(tree);
