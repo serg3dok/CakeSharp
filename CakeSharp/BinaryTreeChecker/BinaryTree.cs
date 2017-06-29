@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace BinaryTreeChecker
 {
-    class BinaryTree
+    public class BinaryTree
     {
-        private int Value;
-        private BinaryTree Left;
-        private BinaryTree Right;
+        public int Value;
+        public BinaryTree Left;
+        public BinaryTree Right;
 
         BinaryTree() { }
 
@@ -19,7 +19,7 @@ namespace BinaryTreeChecker
             Value = value;
         }
 
-        public BinaryTree createBinaryTree()
+        public static BinaryTree createValidBinaryTree()
         {
             BinaryTree tree = new BinaryTree(50);
             // left
