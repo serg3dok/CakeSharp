@@ -54,3 +54,6 @@ namespace FindInOrderedSet
         }
     }
 }
+
+// Binary search
+// O(logN)/O(1)
