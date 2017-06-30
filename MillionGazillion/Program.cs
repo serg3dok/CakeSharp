@@ -22,9 +22,14 @@ namespace MillionGazillion
                 "google.com/about/job"
             };
 
-            string word = "sometext";
+            string word = "google.com/maps/gps";
 
-            trie = addToTrie(trie, word);
+            //trie = addToTrie(trie, word);
+
+            foreach (var url in urls)
+            {
+                trie = addToTrie(trie, url);
+            }
 
             bool isWordInTrie = checkWordInTrie(trie, word);
             Console.WriteLine(isWordInTrie);
