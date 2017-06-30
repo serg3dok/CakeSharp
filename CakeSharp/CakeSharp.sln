@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MillionGazillion", "..\Mill
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindInOrderedSet", "..\FindInOrderedSet\FindInOrderedSet.csproj", "{F9291B18-9E7C-437B-A98F-E8534B01F614}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindRotationPoint", "..\FindRotationPoint\FindRotationPoint.csproj", "{27A52F7E-3EA4-48FB-99C9-50F2234769FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{F9291B18-9E7C-437B-A98F-E8534B01F614}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9291B18-9E7C-437B-A98F-E8534B01F614}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9291B18-9E7C-437B-A98F-E8534B01F614}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27A52F7E-3EA4-48FB-99C9-50F2234769FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27A52F7E-3EA4-48FB-99C9-50F2234769FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27A52F7E-3EA4-48FB-99C9-50F2234769FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27A52F7E-3EA4-48FB-99C9-50F2234769FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
