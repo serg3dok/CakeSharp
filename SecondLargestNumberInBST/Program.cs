@@ -17,7 +17,7 @@ namespace SecondLargestNumberInBST
         {
             
 
-            BinaryTree tree = BinaryTree.CreateLeftBinaryTree();
+            BinaryTree tree = BinaryTree.CreateRightBinaryTree();
 
 
             Console.WriteLine(secondNumber(tree));
@@ -56,6 +56,19 @@ namespace SecondLargestNumberInBST
                 result = tree.Value;
                 tree = tree.Right;
             }
+
+
+            if (tree.Left != null)
+            {
+                tree = tree.Left;
+                result = tree.Value;
+                while (tree.Right != null)
+                {
+                    tree = tree.Right;
+                    result = tree.Value;
+                }
+            }
+
             return result;
         }
 
