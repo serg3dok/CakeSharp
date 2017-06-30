@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecondLargestNumberInBST", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MillionGazillion", "..\MillionGazillion\MillionGazillion.csproj", "{9B506DAE-B917-4672-8368-3D8F09404822}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindInOrderedSet", "..\FindInOrderedSet\FindInOrderedSet.csproj", "{F9291B18-9E7C-437B-A98F-E8534B01F614}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{9B506DAE-B917-4672-8368-3D8F09404822}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B506DAE-B917-4672-8368-3D8F09404822}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B506DAE-B917-4672-8368-3D8F09404822}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9291B18-9E7C-437B-A98F-E8534B01F614}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9291B18-9E7C-437B-A98F-E8534B01F614}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9291B18-9E7C-437B-A98F-E8534B01F614}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9291B18-9E7C-437B-A98F-E8534B01F614}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
