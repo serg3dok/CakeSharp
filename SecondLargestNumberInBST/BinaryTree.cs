@@ -41,5 +41,22 @@ namespace SecondLargestNumberInBST
             return tree;
         }
 
+        public static BinaryTree CreateLeftBinaryTree()
+        {
+            BinaryTree tree = new BinaryTree(50);
+
+            // left side
+            tree.Left = new BinaryTree(25);
+            tree.Left.Left = new BinaryTree(10);
+            tree.Left.Right = new BinaryTree(35);
+            tree.Left.Right.Right = new BinaryTree(40);
+
+
+
+
+
+            return tree;
+        }
+
     }
 }

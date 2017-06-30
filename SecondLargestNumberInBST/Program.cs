@@ -17,7 +17,7 @@ namespace SecondLargestNumberInBST
         {
             
 
-            BinaryTree tree = BinaryTree.CreateBinaryTree();
+            BinaryTree tree = BinaryTree.CreateLeftBinaryTree();
 
 
             Console.WriteLine(secondNumber(tree));
@@ -32,16 +32,25 @@ namespace SecondLargestNumberInBST
             // so we can go down on right branches and keep in mind previous value
             // if no right branch from root, so return value from root.left
 
+            int result = tree.Value;
+
             if (tree.Right == null)
             {
                 if (tree.Left != null)
                 {
-                    return tree.Left.Value;
+                    tree = tree.Left;
+                    result = tree.Value;
+                    while (tree.Right != null)
+                    {
+                        tree = tree.Right;
+                        result = tree.Value;
+                    }
+                    return result;
                 }
                 throw new ArgumentException();
             }
 
-            int result = tree.Value;
+            
             while (tree.Right != null)
             {
                 result = tree.Value;
