@@ -17,7 +17,7 @@ namespace FindRotationPoint
 
         static void Main(string[] args)
         {
-            char[] charArr = {'k', 'v', 'a', 'b', 'c', 'd', 'e', 'g', 'i'};
+            char[] charArr = {'k', 'v', 'z', 'a', 'b', 'c', 'd', 'e', 'g', 'i'};
 
             Console.WriteLine(rotationPointAtIndex(charArr));
             Console.Read();
@@ -25,11 +25,11 @@ namespace FindRotationPoint
 
         public static int rotationPointAtIndex(char[] charArr)
         {
-            int startIndex = -1;
+            int startIndex = 0;
             int endIndex = charArr.Length-1;
             int index = 0;
 
-            while (charArr[startIndex+1] > charArr[endIndex])
+            while (true)
             {
 
                 int distance = endIndex - startIndex;
@@ -46,6 +46,10 @@ namespace FindRotationPoint
                     startIndex = guessIndex;
                 }
                 index = guessIndex;
+                if (startIndex + 1 == endIndex)
+                {
+                    break;
+                }
             }
 
             return index;
@@ -56,3 +60,5 @@ namespace FindRotationPoint
 
 
 }
+
+// O(logN) / O(1)
