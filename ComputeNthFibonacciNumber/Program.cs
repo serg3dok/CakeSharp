@@ -10,26 +10,37 @@ namespace ComputeNthFibonacciNumber
     {
 
         /*
-         * Write a function Fib() that a takes an integer n and returns the nth fibonacci ↴ number. 
+         * Write a function Fib() that a takes an integer n and returns the nth fibonacci number. 
          */
 
         static void Main(string[] args)
         {
             int fibNumber = 12;
-            int nthFib = 0;
-            Console.WriteLine(Fib(fibNumber, nthFib));
+            Console.WriteLine(Fib(fibNumber));
             Console.Read();
         }
 
-        public static int Fib(int n, int nthFib)
+        public static int Fib(int fiboNuber)
         {
-            if (n == 0 || n == 1)
+
+            int prevPrev = 0;
+            int prev = 1;
+            int current = 0;
+
+            for (int i = 0; i < fiboNuber; i++)
             {
-                return nthFib;
+                current = prevPrev + prev;
+                prevPrev = prev;
+                prev = current;
             }
-            return Fib(n-1, nthFib++)+Fib(n-2, nthFib);
+
+
+            return current;
 
         }
 
     }
 }
+
+// O(N) O(1)
+
