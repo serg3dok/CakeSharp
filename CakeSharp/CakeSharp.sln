@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindRotationPoint", "..\Fin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InflightEntertainment", "InflightEntertainment\InflightEntertainment.csproj", "{4B25CAD5-2E3B-4180-9860-9546C2C678AA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputeNthFibonacciNumber", "..\ComputeNthFibonacciNumber\ComputeNthFibonacciNumber.csproj", "{D55D52A7-190A-42AB-AF4A-B5100BE47CA5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{4B25CAD5-2E3B-4180-9860-9546C2C678AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B25CAD5-2E3B-4180-9860-9546C2C678AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B25CAD5-2E3B-4180-9860-9546C2C678AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D55D52A7-190A-42AB-AF4A-B5100BE47CA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D55D52A7-190A-42AB-AF4A-B5100BE47CA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D55D52A7-190A-42AB-AF4A-B5100BE47CA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D55D52A7-190A-42AB-AF4A-B5100BE47CA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
