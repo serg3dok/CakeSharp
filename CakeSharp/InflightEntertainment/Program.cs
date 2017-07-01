@@ -25,7 +25,7 @@ namespace InflightEntertainment
 
         public static bool isThereTwoMovies(int[] movies, int flight)
         {
-            var moviesSoFar = new List<int>();
+            var moviesSoFar = new HashSet<int>();
             foreach (var movie in movies)
             {
                 if (moviesSoFar.Contains(flight - movie))
