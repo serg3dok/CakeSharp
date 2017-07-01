@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindInOrderedSet", "..\Find
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindRotationPoint", "..\FindRotationPoint\FindRotationPoint.csproj", "{27A52F7E-3EA4-48FB-99C9-50F2234769FB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InflightEntertainment", "InflightEntertainment\InflightEntertainment.csproj", "{4B25CAD5-2E3B-4180-9860-9546C2C678AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{27A52F7E-3EA4-48FB-99C9-50F2234769FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27A52F7E-3EA4-48FB-99C9-50F2234769FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27A52F7E-3EA4-48FB-99C9-50F2234769FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B25CAD5-2E3B-4180-9860-9546C2C678AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B25CAD5-2E3B-4180-9860-9546C2C678AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B25CAD5-2E3B-4180-9860-9546C2C678AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B25CAD5-2E3B-4180-9860-9546C2C678AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
