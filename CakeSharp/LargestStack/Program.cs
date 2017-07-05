@@ -15,7 +15,7 @@ namespace LargestStack
      * Your stacks will contain only integers.
      */
 
-    class MaxStack
+    class MaxStackTwoStacks
     {
         public static int getMax(Stack<int> stack1)
         {
@@ -39,13 +39,48 @@ namespace LargestStack
         }
     }
 
+    class MaxStack
+    {
+        Stack<int> stack = new Stack<int>();
+        Stack<int> maxValues = new Stack<int>();
+        
+
+
+        public void Push(int n)
+        {
+            
+            if (maxValues.Count == 0 || n >= maxValues.Peek())
+            {
+                maxValues.Push(n);
+            }
+            stack.Push(n);
+        }
+
+        public int Pop()
+        {
+            if (stack.Peek() == maxValues.Peek())
+            {
+                maxValues.Pop();
+            }
+            return stack.Pop();
+        }
+
+        public int GetMax()
+        {
+            return maxValues.Peek();
+        }
+        
+    }
+
     class Program
     {
         
 
         static void Main(string[] args)
         {
-            Stack<int> stack = new Stack<int>();
+            MaxStack stack = new MaxStack();
+
+            //Stack<int> stack = new Stack<int>();
 
             stack.Push(5);
             stack.Push(8);
@@ -54,9 +89,11 @@ namespace LargestStack
             stack.Push(0);
             stack.Push(-5);
 
-            Console.WriteLine(MaxStack.getMax(stack));
+            Console.WriteLine(stack.GetMax());
             Console.Read();
 
         }
     }
 }
+
+// O(n)
