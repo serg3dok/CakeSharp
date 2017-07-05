@@ -19,8 +19,6 @@ namespace QueueTwoStacks
      // 2 3
      // 1
 
-
-
     class Program
     {
 
@@ -36,16 +34,14 @@ namespace QueueTwoStacks
 
             public int dequeue()
             {
-                if (stack2.Count > 0)
+                if (stack2.Count == 0)
                 {
-                    return stack2.Pop();
+
+                    while (stack1.Count > 0)
+                    {
+                        stack2.Push(stack1.Pop());
+                    }
                 }
-                
-                while (stack1.Count > 0)
-                {
-                    stack2.Push(stack1.Pop());
-                }
-                
                 return stack2.Pop();
             }
 
@@ -72,18 +68,11 @@ namespace QueueTwoStacks
 
             Console.Read();
 
-
-            // 65
-            // 34
-
-
         }
-
-
-        
+      
     }
-
-
-
-    
+  
 }
+
+
+// O(m)

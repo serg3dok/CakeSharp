@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheCakeThief", "..\TheCakeT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueTwoStacks", "..\QueueTwoStacks\QueueTwoStacks.csproj", "{98AF2ECF-7C15-4D02-903A-18FF075CA7A3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LargestStack", "LargestStack\LargestStack.csproj", "{F5B7ADBD-EA9F-495D-BACF-EAB883B75693}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{98AF2ECF-7C15-4D02-903A-18FF075CA7A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98AF2ECF-7C15-4D02-903A-18FF075CA7A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98AF2ECF-7C15-4D02-903A-18FF075CA7A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5B7ADBD-EA9F-495D-BACF-EAB883B75693}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5B7ADBD-EA9F-495D-BACF-EAB883B75693}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5B7ADBD-EA9F-495D-BACF-EAB883B75693}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5B7ADBD-EA9F-495D-BACF-EAB883B75693}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
