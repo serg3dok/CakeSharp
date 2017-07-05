@@ -8,5 +8,16 @@ namespace TheCakeThief
 {
     class CakeType
     {
+        public int Weight;
+        public int Value;
+
+        public CakeType(int weight, int value)
+        {
+            Weight = weight;
+            Value = value;
+        }
+
+        
+
     }
 }
