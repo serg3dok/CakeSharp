@@ -36,6 +36,10 @@ namespace QueueTwoStacks
 
             public int dequeue()
             {
+                if (stack2.Count > 0)
+                {
+                    return stack2.Pop();
+                }
                 
                 while (stack1.Count > 0)
                 {
@@ -50,6 +54,7 @@ namespace QueueTwoStacks
         static void Main(string[] args)
         {
             MyQueue myQueue = new MyQueue();
+
             myQueue.enqueue(1);
             myQueue.enqueue(2);
             myQueue.enqueue(3);
@@ -67,6 +72,9 @@ namespace QueueTwoStacks
 
             Console.Read();
 
+
+            // 65
+            // 34
 
 
         }
