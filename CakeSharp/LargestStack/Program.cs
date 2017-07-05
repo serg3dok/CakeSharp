@@ -41,33 +41,33 @@ namespace LargestStack
 
     class MaxStack
     {
-        Stack<int> stack = new Stack<int>();
-        Stack<int> maxValues = new Stack<int>();
+        Stack<int> _stack = new Stack<int>();
+        Stack<int> _maxValues = new Stack<int>();
         
 
 
         public void Push(int n)
         {
             
-            if (maxValues.Count == 0 || n >= maxValues.Peek())
+            if (_maxValues.Count == 0 || n >= _maxValues.Peek())
             {
-                maxValues.Push(n);
+                _maxValues.Push(n);
             }
-            stack.Push(n);
+            _stack.Push(n);
         }
 
         public int Pop()
         {
-            if (stack.Peek() == maxValues.Peek())
+            if (_stack.Peek() == _maxValues.Peek())
             {
-                maxValues.Pop();
+                _maxValues.Pop();
             }
-            return stack.Pop();
+            return _stack.Pop();
         }
 
         public int GetMax()
         {
-            return maxValues.Peek();
+            return _maxValues.Peek();
         }
         
     }
@@ -96,4 +96,4 @@ namespace LargestStack
     }
 }
 
-// O(n)
+// O(1)/O(n)
