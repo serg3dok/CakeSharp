@@ -44,7 +44,7 @@ namespace KthToLastNodeNodeInLinkedList
             f.Next = g;
             g.Next = h;
 
-            Node kthNode = kthToLastNode(1, a);
+            Node kthNode = kthToLastNode2(3, a);
             Console.WriteLine(kthNode.Value);
             Console.Read();
 
@@ -67,7 +67,23 @@ namespace KthToLastNodeNodeInLinkedList
             }
 
             return result;
-        }
+        } // O(n)/O(q)
+
+        public static Node kthToLastNode2(int kth, Node head)
+        {
+            Node result = head;
+            int i = 0;
+            while (head != null)
+            {
+                if (i >= kth)
+                {
+                    result = result.Next;
+                }
+                head = head.Next;
+                i++;
+            }
+            return result;
+        } // O(N)/O(1)
 
         public static void printLinkedList(Node head)
         {
