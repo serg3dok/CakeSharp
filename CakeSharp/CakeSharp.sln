@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LargestStack", "LargestStac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheStolenBreakfastDrone", "TheStolenBreakfastDrone\TheStolenBreakfastDrone.csproj", "{5AD55F43-1179-4758-B442-9073B0CE83C9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeleteNode", "..\DeleteNode\DeleteNode.csproj", "{A7126275-4427-4619-9F69-59DDC7EF4E6E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{5AD55F43-1179-4758-B442-9073B0CE83C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AD55F43-1179-4758-B442-9073B0CE83C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AD55F43-1179-4758-B442-9073B0CE83C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7126275-4427-4619-9F69-59DDC7EF4E6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7126275-4427-4619-9F69-59DDC7EF4E6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7126275-4427-4619-9F69-59DDC7EF4E6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7126275-4427-4619-9F69-59DDC7EF4E6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
