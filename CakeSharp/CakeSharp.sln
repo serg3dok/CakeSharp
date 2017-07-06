@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheStolenBreakfastDrone", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeleteNode", "..\DeleteNode\DeleteNode.csproj", "{A7126275-4427-4619-9F69-59DDC7EF4E6E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContainsCycle", "ContainsCycle\ContainsCycle.csproj", "{ABD4B8EA-DEB2-4359-B8D2-B7A7BE4640B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{A7126275-4427-4619-9F69-59DDC7EF4E6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7126275-4427-4619-9F69-59DDC7EF4E6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7126275-4427-4619-9F69-59DDC7EF4E6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABD4B8EA-DEB2-4359-B8D2-B7A7BE4640B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABD4B8EA-DEB2-4359-B8D2-B7A7BE4640B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABD4B8EA-DEB2-4359-B8D2-B7A7BE4640B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABD4B8EA-DEB2-4359-B8D2-B7A7BE4640B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
