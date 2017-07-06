@@ -10,8 +10,8 @@ namespace DeleteNode
 
     class Node
     {
-        public Node Next;
-        public int Data;
+        public Node Next { get; set; }
+        public int Data { get; set; }
 
         public Node(int data)
         {
@@ -43,19 +43,28 @@ namespace DeleteNode
             c.Next = d;
             
 
-
-
-            b = deleteNode(b);
+            deleteNode(a);
             printLinkedListNodes(a);
+
             Console.ReadKey();
 
         }
 
-        public static Node deleteNode(Node nodeToDelete)
+        public static void deleteNode(Node nodeToDelete)
         {
-            nodeToDelete = nodeToDelete.Next;
-            return nodeToDelete;
+            if (nodeToDelete.Next != null)
+            {
+                Node nextNode = nodeToDelete.Next;
+                nodeToDelete.Next = nextNode.Next;
+                nodeToDelete.Data = nextNode.Data;
+            } else
+            {
+                throw new InvalidOperationException("Can't delete last node with this method");
+            }
+            
         }
+
+        // O(1)/O(1)
 
         public static void printLinkedListNodes(Node head)
         {
