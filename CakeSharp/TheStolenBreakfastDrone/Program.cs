@@ -19,14 +19,14 @@ namespace TheStolenBreakfastDrone
         {
             int[] id = {123123500, 123123500, 091165890, 091165890,
                 197987500, 197987500, 008456789, 170952377,
-                170952377, 097111588, 097111588, 097111588,
+                170952377, 097111588, 097111588,
                 789225897, 789225897, 422246625, 422246625};
-            Console.WriteLine(findUnicNumber(id));
+            Console.WriteLine(findUnicNumberUsingBitwise(id));
             Console.Read();
 
         }
 
-        public static int findUnicNumber(int[] idArr)
+        public static int findUnicNumberUsingSort(int[] idArr)
         {
             Array.Sort(idArr);
 
@@ -41,5 +41,17 @@ namespace TheStolenBreakfastDrone
 
         }
         // O(nlogn)/O(1)
+
+
+        public static int findUnicNumberUsingBitwise(int[] idArr)
+        {
+            int result = 0;
+            foreach (var id in idArr)
+            {
+                result = result ^ id;
+            }
+            return result;
+        }
+        // O(n)/ O(n)
     }
 }
