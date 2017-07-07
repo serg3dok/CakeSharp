@@ -14,7 +14,7 @@ namespace ParenthesisMatching
             string testString =
                 "Sometimes (when I nest them (my parentheticals) too much (like this (and this))) they get confusing.";
 
-            Console.WriteLine(findMatchingParenthesis(testString, 10));
+            Console.WriteLine(findMatchingParenthesis2(testString, 10));
             Console.ReadKey();
 
         }
@@ -39,7 +39,33 @@ namespace ParenthesisMatching
             }
 
             return i;
+        } // O(N)/O(N/2) 
+
+
+        public static int findMatchingParenthesis2(string str, int first)
+        {
+            int parenthesisCounter = 1;
+            
+            for (int position = first+1; position < str.Length; position++)
+            {
+                
+                if (str[position] == '(')
+                {
+                    parenthesisCounter++;
+                }
+                if (str[position] == ')')
+                {
+                    parenthesisCounter--;
+                }
+                if (parenthesisCounter == 0)
+                {
+                    return position;
+                }
+
+            }
+
+            return -1;
         }
     }
 }
-// O(N)/O(N/2)
+
