@@ -65,7 +65,7 @@ namespace ParenthesisMatching
             }
 
             return -1;
-        }
+        } // O(N)/O(1)
     }
 }
 
