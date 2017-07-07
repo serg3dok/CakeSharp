@@ -32,4 +32,4 @@ namespace ReverseStringInPlace
             return new string(arrChars);
         }
     }
-} // O(N/2)/O(N)
+} // O(N/2)/O(1)

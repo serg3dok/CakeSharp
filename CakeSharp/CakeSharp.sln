@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KthToLastNodeNodeInLinkedLi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseStringInPlace", "ReverseStringInPlace\ReverseStringInPlace.csproj", "{7FD66E5F-A4B4-45A2-83F2-E7F8545CF8E1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseWords", "ReverseWords\ReverseWords.csproj", "{77768E2D-777F-46B3-9009-873DC911A87A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{7FD66E5F-A4B4-45A2-83F2-E7F8545CF8E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7FD66E5F-A4B4-45A2-83F2-E7F8545CF8E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7FD66E5F-A4B4-45A2-83F2-E7F8545CF8E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77768E2D-777F-46B3-9009-873DC911A87A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77768E2D-777F-46B3-9009-873DC911A87A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77768E2D-777F-46B3-9009-873DC911A87A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77768E2D-777F-46B3-9009-873DC911A87A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
