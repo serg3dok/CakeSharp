@@ -21,7 +21,7 @@ namespace PermutationPalindrome
             string test4 = "livci"; // false
             string test5 = "qwertyuioplkjhgfdsazxcvbnmnbvcxzasdfghjklpoiuytrewq"; // true
 
-            Console.WriteLine(palindromeChecker(test5));
+            Console.WriteLine(palindromeChecker2(test5));
             Console.Read();
 
         }
@@ -48,6 +48,33 @@ namespace PermutationPalindrome
             }
 
             return true;
-        }
+        } // O(nlogN)/O(N)
+
+        public static bool palindromeChecker2(string str)
+        {
+            // use 255 array for each character in extended ASCII table
+            int[] charCounter = new int[255];
+            char[] arrChar = str.ToCharArray();
+
+            foreach (var c in arrChar)
+            {
+                charCounter[c]++;
+            }
+
+            int odd = 0;
+            foreach (var n in charCounter)
+            {
+                if (n % 2 == 1)
+                {
+                    odd++;
+                }
+                if (odd > 1)
+                {
+                    return false;
+                }
+            }
+            
+            return true;
+        } // O(N)/O(N)
     }
 }
