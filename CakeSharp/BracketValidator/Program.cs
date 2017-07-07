@@ -59,9 +59,9 @@ namespace BracketValidator
                         return false;
                     }
                 }
-
             }
             return true;
-        } // O(N)/O(N/2)
+        } // O(N)/O(N)
+
     }
 }
