@@ -21,7 +21,7 @@ namespace PermutationPalindrome
             string test4 = "livci"; // false
             string test5 = "qwertyuioplkjhgfdsazxcvbnmnbvcxzasdfghjklpoiuytrewq"; // true
 
-            Console.WriteLine(palindromeChecker2(test5));
+            Console.WriteLine(palindromeChecker3(test5));
             Console.Read();
 
         }
@@ -76,5 +76,26 @@ namespace PermutationPalindrome
             
             return true;
         } // O(N)/O(N)
+
+        public static bool palindromeChecker3(string str)
+        {
+            char[] arrChars = str.ToCharArray();
+            var noPair = new HashSet<char>();
+
+            foreach (var c in arrChars)
+            {
+                if (noPair.Contains(c))
+                {
+                    noPair.Remove(c);
+                }
+                else
+                {
+                    noPair.Add(c);
+                }
+            }
+            return noPair.Count <= 1;
+        }  // O(N)/O(N)
+
     }
+    
 }
