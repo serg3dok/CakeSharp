@@ -22,7 +22,7 @@ namespace TopScores
 
         public static int[] sort(int[] unsorted, int max) 
         {
-            int[] scores = new int[max];
+            int[] scores = new int[max+1];
             foreach (var score in unsorted)
             {
                 scores[score]++;
@@ -30,22 +30,20 @@ namespace TopScores
 
             int[] sorted = new int[max];  // 1
 
-            int i = max - 1;
-            int j = 100;
+            int scoreIndex = max; // score index
+            int sortedIndex = 0;
 
-            while (i >= 0) // iterate through sorted from top to bottom
+            while (sortedIndex < max) // iterate through sorted from top to bottom  // sortedIndex = 0
             {
-                while (scores[j] > 0 && i >= 0) // iterate through unsorted each value
+                while (scores[scoreIndex] > 0 && sortedIndex < max) // iterate through scores  // scores[100] = 2
                 {
-                    sorted[i--] = j;
-                    scores[j]--;
-
+                    sorted[sortedIndex++] = scoreIndex; // populate sorted sorted[0] = 100
+                    scores[scoreIndex]--;
                 }
-                i--;
-                j--;
+                scoreIndex--;
             }
             return sorted;
-        }
+        }  // O(N)/O(N)
 
         public static int[] createTestData(int num)
         {
