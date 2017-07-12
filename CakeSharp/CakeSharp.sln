@@ -51,6 +51,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopScores", "TopScores\TopS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhichAppearsTwice", "WhichAppearsTwice\WhichAppearsTwice.csproj", "{B1D72EE1-66A4-486A-BF21-3E7AA814B441}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordCloudData", "..\WordCloudData\WordCloudData.csproj", "{0E71C131-ADCC-4D78-B2B8-805079E8F077}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,10 @@ Global
 		{B1D72EE1-66A4-486A-BF21-3E7AA814B441}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1D72EE1-66A4-486A-BF21-3E7AA814B441}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1D72EE1-66A4-486A-BF21-3E7AA814B441}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E71C131-ADCC-4D78-B2B8-805079E8F077}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E71C131-ADCC-4D78-B2B8-805079E8F077}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E71C131-ADCC-4D78-B2B8-805079E8F077}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E71C131-ADCC-4D78-B2B8-805079E8F077}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
