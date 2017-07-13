@@ -42,3 +42,5 @@ namespace InPlaceShuffle
         }
     }
 }
+
+// O(N)/O(1)
