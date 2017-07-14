@@ -109,6 +109,7 @@ namespace SingleRiffleShuffle
 
             return false;
         }
+        // O(N)/
 
         public static bool isShufled(Stack<int> half1, Stack<int> half2, Stack<int> shuffled)
         {
