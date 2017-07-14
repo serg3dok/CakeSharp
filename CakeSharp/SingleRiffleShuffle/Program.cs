@@ -41,9 +41,73 @@ namespace SingleRiffleShuffle
             shuffledDeck.Push(5);
             shuffledDeck.Push(10);
 
-            Console.WriteLine(isShufled(half1, half2, shuffledDeck));
+            int[] halfOne = { 1, 2, 3 };
+            int[] halfTwo = { 4, 5, 6};
+            int[] shuffledCards = { 6, 3, 5, 2, 4, 1 };
+
+
+
+
+            Console.WriteLine(isShuffled2(halfOne, halfTwo, shuffledCards));
             Console.ReadKey();
 
+        }
+
+        public static bool isShuffled2(int[] half1, int[] half2, int[] shuffledDeck)
+        {
+
+            if (shuffledDeck.Length == 0)
+            {
+                return false;
+            }
+             
+            while (shuffledDeck.Length > 0 && half1.Length > 0 && half2.Length > 0)
+            {
+
+                if (half1.Length == half2.Length)
+                {
+                    if (shuffledDeck[0] == half1[half1.Length - 1])
+                    {
+                        half1 = removeLastCard(half1);
+                    }
+
+                    if (shuffledDeck[0] == half2[half2.Length - 1])
+                    {
+                        half2 = removeLastCard(half2);
+                    }
+                    shuffledDeck = removeTopCard(shuffledDeck);
+                }
+
+                if (half1.Length > half2.Length)
+                {
+                    if (shuffledDeck[0] != half1[half1.Length - 1])
+                    {
+                        return false;
+                    }
+
+                    half1 = removeLastCard(half1);
+                }
+
+                if (half1.Length < half2.Length)
+                {
+                    if (shuffledDeck[0] != half2[half2.Length - 1])
+                    {
+                        return false;
+                    }
+
+                    half2 = removeLastCard(half2);
+
+                }
+
+                shuffledDeck = removeTopCard(shuffledDeck);
+            }
+
+            if (shuffledDeck.Length == 0 && half1.Length == 0 && half2.Length == 0)
+            {
+                return true;
+            }
+
+            return false;
         }
 
         public static bool isShufled(Stack<int> half1, Stack<int> half2, Stack<int> shuffled)
@@ -62,5 +126,21 @@ namespace SingleRiffleShuffle
             return true;
 
         }
+
+        public static int[] removeTopCard(int[] source)
+        {
+            int[] result = new int[source.Length - 1];
+            Array.Copy(source, 1, result, 0, result.Length);
+            return result;
+        }
+
+        public static int[] removeLastCard(int[] source)
+        {
+            int[] result = new int[source.Length - 1];
+            Array.Copy(source, result, result.Length);
+            return result;
+        }
     }
+
+    
 }
