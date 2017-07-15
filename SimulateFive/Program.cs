@@ -12,10 +12,40 @@ namespace SimulateFive
 
         static void Main(string[] args)
         {
-            for (int i = 0; i < 30; i++)
+
+            /* test probability
+            int a1 = 0, a2 = 0, a3 = 0, a4 = 0, a5 = 0;
+            
+            for (int i = 0; i < 1000000; i++)
             {
-                Console.WriteLine(randomFive());
+                int n = randomFive();
+                switch (n)
+                {
+                    case 1:
+                        a1++;
+                        break;
+                    case 2:
+                        a2++;
+                        break;
+                    case 3:
+                        a3++;
+                        break;
+                    case 4:
+                        a4++;
+                        break;
+                    case 5:
+                        a5++;
+                        break;
+                }
             }
+
+            Console.WriteLine("1 " + a1);
+            Console.WriteLine("2 " + a2);
+            Console.WriteLine("3 " + a3);
+            Console.WriteLine("4 " + a4);
+            Console.WriteLine("5 " + a5);
+            */
+
             Console.WriteLine(randomFive());
             Console.ReadKey();
         }
