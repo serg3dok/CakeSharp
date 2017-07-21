@@ -13,7 +13,9 @@ namespace FindRepeatSpace
             int[] testData = {1, 2, 3, 4, 0, 5, 2, 8, 9};
             Console.WriteLine(findDuplicate(testData));
             Console.Read();
-
+            IList<IList<int>> lst = new List<IList<int>>();
+            lst[0].Add(1);
+            
         }
 
         public static int findDuplicate(int[] arr)
